@@ -1,0 +1,16 @@
+@startuml sequence
+!include ../../theme/charte.puml
+actor Chauffeur
+participant ":AppMobile" as App
+participant ":LivraisonCtrl" as Ctrl
+participant "l : Livraison" as L
+
+Chauffeur -> App : confirmer(photo, signature)
+App -> Ctrl : confirmerLivraison(id, preuve)
+alt preuve valide
+  Ctrl -> L : confirmer(preuve)
+  Ctrl --> App : ok
+else sinon
+  Ctrl --> App : erreur : preuve invalide
+end
+@enduml

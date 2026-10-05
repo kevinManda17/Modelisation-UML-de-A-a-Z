@@ -1,0 +1,27 @@
+' Thème PlantUML aux couleurs de la charte Tech-avancées
+skinparam style strictuml
+skinparam shadowing false
+skinparam defaultFontName Inter
+skinparam defaultFontSize 12
+skinparam defaultFontColor #1B2430
+skinparam ArrowColor #0B2545
+skinparam ArrowFontColor #0B7C86
+skinparam ClassBorderColor #0B2545
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassHeaderBackgroundColor #F1F5F9
+skinparam ClassFontColor #0B2545
+skinparam ActorBorderColor #0B2545
+skinparam ActorBackgroundColor #FFFFFF
+skinparam UsecaseBorderColor #0B2545
+skinparam UsecaseBackgroundColor #DDF3F5
+skinparam RectangleBorderColor #0B2545
+skinparam RectangleFontColor #0B2545
+skinparam ParticipantBorderColor #0B2545
+skinparam ParticipantBackgroundColor #F1F5F9
+skinparam ParticipantFontColor #0B2545
+skinparam SequenceLifeLineBorderColor #5B6878
+skinparam SequenceGroupBorderColor #0B2545
+skinparam SequenceGroupHeaderFontColor #0B2545
+skinparam NoteBackgroundColor #F1F5F9
+skinparam NoteBorderColor #0B2545
+hide footbox

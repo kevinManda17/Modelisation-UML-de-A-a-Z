@@ -1,0 +1,22 @@
+@startuml cas-utilisation
+!include ../../theme/charte.puml
+left to right direction
+actor Client
+actor Dispatcher
+actor Chauffeur
+actor "Service SMS" as SMS <<système>>
+
+rectangle "Mwangaza Track" {
+  usecase "Suivre une livraison" as UC1
+  usecase "Planifier une tournée" as UC2
+  usecase "Confirmer une livraison" as UC3
+  usecase "S'authentifier" as UC4
+}
+
+Client --> UC1
+Dispatcher --> UC2
+Chauffeur --> UC3
+UC2 ..> UC4 : <<include>>
+UC3 ..> UC4 : <<include>>
+UC3 --> SMS
+@enduml

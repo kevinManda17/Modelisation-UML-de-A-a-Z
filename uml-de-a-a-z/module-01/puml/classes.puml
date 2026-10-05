@@ -1,0 +1,24 @@
+@startuml classes
+!include ../../theme/charte.puml
+hide empty methods
+
+class Client {
+  nom : Texte
+  téléphone : Texte
+}
+class Commande {
+  numéro : Texte
+  date : Date
+}
+class Colis {
+  poids : Réel
+}
+class Livraison {
+  statut : StatutLivraison
+  adresse : Adresse
+}
+
+Client "1" -- "0..*" Commande : passe >
+Commande *-- "1..*" Colis : contient
+Commande "1" -- "1..*" Livraison : donne lieu à >
+@enduml
